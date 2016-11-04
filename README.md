@@ -1,5 +1,14 @@
 # google image search scraper
 
+## install
+
+```sh
+pip install --upgrade google-api-python-client
+pip install requests
+```
+
+## use
+
 `python scraper.py --query="cute pandas" --n=100`
 
 Will get the first 100 google image results for "cute pandas" in a directory `cute pandas/[time of query]/`. That directory will contain a file `query-results.json` with metadata, along with 100 cute panda images, named by result index + filename
